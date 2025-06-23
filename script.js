@@ -2,9 +2,8 @@ const bip39 = require('bip39');
 const nacl = require('tweetnacl');
 const { derivePath } = require('ed25519-hd-key');
 const bs58 = require('bs58');
-const readline = require('readline');
 
-class HDWallet {
+export class HDWallet {
     static walletCount = 0;
 
     constructor(mnemonic = null) {
